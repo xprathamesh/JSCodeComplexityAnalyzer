@@ -1,11 +1,11 @@
-# HW2
+### Code Complexity Analysis using Esprima
 
-### CSC 510 Software Engineering - HW2
+[Esprima](https://esprima.org/) is a high performance, standard-compliant ECMAScript parser written in ECMAScript. It generates AST's (Abstract Syntax Trees) that can be used for performing lexical or syntactic analysis.
 
-Complete and extend the workshop to solve the following measures:
+This project demonstrates the complexity analysis of JavaScript Code using Esprima
 
-1. Do simple calculations (60 points)
-
+The following functionalities have been implemented as of now:
+   
    Per Function:
 
    * **ParameterCount**: The number of parameters for function.
@@ -16,20 +16,33 @@ Complete and extend the workshop to solve the following measures:
    * **AllComparisons**: The total number of comparision operators (`>`, `<`, `>=`, `<=`) in file.
    * **String Usage**: How many string literals are used in file.
    * **PackageComplexity**: The number of imports used in file ( `require("...")` ).
-
-2. Using multiple visitors (40 points).
-
+   
+   Using Multiple Visitors:
+   
    * **SimpleCyclomaticComplexity**: The number of if statements/decision nodes/loops + 1.
    * **MaxMessageChains**: The max length of a message chain in a function. A message chain can be formed from a data access (.), or array access [n].
-
-     For example,
+   
+   For example,
 
      ```javascript
      // Message Chain: 4
      mints.name.toString().split(".")[0];
      ```
+   Advanced:
+   * **MaxConditions**: The max number of condition predicates (expressions seperated by `||`, `&&`) in an if statement.
 
-## Submission
+
+Run the program and print all the tokens in an ast.
+   ```
+      npm install
+      node analysis.js
+      or
+      node analysis.js mystery.js
+   ```
+
+Challenge:
+Try implementing the folowing:
+   * **MaxNestingDepth**: The max depth of scopes (nested ifs, loops, etc) -- this one is hard, only expect a few to get to do finish this one.
 
 The code for the above is available at [analysis.js](/analysis.js), within the complexity function.
 
