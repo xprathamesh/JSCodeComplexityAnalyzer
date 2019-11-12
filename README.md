@@ -44,7 +44,7 @@ Challenge:
 Try implementing the folowing:
    * **MaxNestingDepth**: The max depth of scopes (nested ifs, loops, etc) -- this one is hard, only expect a few to get to do finish this one.
 
-The code for the above is available at [analysis.js](/analysis.js), within the complexity function.
+The code for the above is available in [analysis.js](/analysis.js), within the complexity function.
 
 Output after running complexity for [mystery.js](/mystery.js)
 
