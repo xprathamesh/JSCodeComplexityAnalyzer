@@ -41,7 +41,7 @@ Run the program and print all the tokens in an ast.
    ```
 
 Challenge:
-Try implementing the folowing:
+Try implementing the following:
    * **MaxNestingDepth**: The max depth of scopes (nested ifs, loops, etc) -- this one is hard, only expect a few to get to do finish this one.
 
 The code for the above is available in [analysis.js](/analysis.js), within the complexity function.
